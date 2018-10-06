@@ -4,7 +4,7 @@
 
 ## What is this?
 
-This program produces single continuous lines from black and white bitmap images suitable for use with pen plotters.
+This program produces a single continuous line from a black and white bitmap image suitable for use with pen plotters.
 
 I saw some pretty neat images made with plotters like the [AxiDraw](https://axidraw.com/) and wanted to do something like it. While I didn't produce something quite like my inpiration, it is pretty okay for one night of hacking. 
 
@@ -19,7 +19,7 @@ Next, when running the program it performs the following transformations:
 * Take a random sample according to some divisor of the total number of pixels
 * Then starting with the first pixel, draw a line to the next nearest pixel
 
-This takes a minute or so on my old computer and due to the sequential nature of how I threw it together isn't the fastest thing anyway. I then loaded this into [Inkscape](https://inkscape.org/) and did a single pass of the Simply option on the path, did some centering, and then exported it to HPGL to be sent to the plotter.
+This takes a minute or so on my old computer and due to the sequential nature of how I threw it together isn't the fastest thing anyway. I then loaded this into [Inkscape](https://inkscape.org/) and did a single pass of the Simplify (Ctrl+L) option on the path, did some centering, and then exported it to HPGL to be sent to the plotter.
 
 ## How could I make it work?
 
