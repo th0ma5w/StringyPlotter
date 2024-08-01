@@ -10,7 +10,7 @@ divisor = int(sys.argv[3])
 i = Image.open(input_image)
 ii = np.array(i)
 iii = np.where(ii==1)
-iiii = np.column_stack(reversed(iii))
+iiii = np.column_stack(list(reversed(iii)))
 iiiii = iiii[np.random.choice(iiii.shape[0],iiii.shape[0]//divisor,replace=False),:]
 
 the_first = iiiii[0]
